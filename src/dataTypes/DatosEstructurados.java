@@ -1,5 +1,7 @@
 package dataTypes;
 
+import java.util.Arrays;
+
 public class DatosEstructurados {
 
 	public static void main(String[] args) {
@@ -72,6 +74,12 @@ public class DatosEstructurados {
 		int parseao = Integer.parseInt(presupuesto);
 		System.out.println("Aplicando parseInt, el valor de " + presupuesto + " de tipo " + presupuesto.getClass().getSimpleName() + " ahora es " + parseao + " que ahora es de tipo " + ((Object)parseao).getClass().getSimpleName());
 		
+		
+		//Parseado de presupuesto a tipo Double
+		System.out.println("***Parseado a tipo Double***");
+		double parseado = Double.parseDouble(presupuesto);
+		System.out.println("Aplicando parseDouble, el valor de " + presupuesto + " de tipo " + presupuesto.getClass().getSimpleName() + " ahora es " + parseado + " que ahora es de tipo " + ((Object)parseado).getClass().getSimpleName());
+		
 		/*
 		 Arrays:
 		 
@@ -80,6 +88,9 @@ public class DatosEstructurados {
 		
 		String[] cars = {"Volkswagen", "Mazda", "Kia", "Ford"};
 		System.out.println(cars);
+		System.out.println(Arrays.toString(cars));
+		
+		
 		
 		/*
 		 Variables por tipo de declaración
